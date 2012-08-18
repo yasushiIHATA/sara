@@ -3,7 +3,8 @@ Saramawashi::Application.routes.draw do
   resources :stores
   resources :progresses
   resources :people
-  resources :users
+#  resources :users
+  match "users/index" => "users#index"
   match "home/index" => "home#index" 
 
   # The priority is based upon order of creation:
